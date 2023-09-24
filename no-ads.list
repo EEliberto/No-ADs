@@ -1,0 +1,24 @@
+hostname = hwimg.beingfine.cn, learnywhere.cn, enjoy.cdn-static.abchina.com, res.kfc.com.cn, mbmodule-openapi.paas.cmbchina.com, az1mbasecc.bas.cmbchina.com, intellicc.bas.cmbchina.com, dictvip-business.youdao.com, dict.youdao.com,api-overmind.youdao.com,cdke.youdao.com
+
+^https?:\/\/cloud\.189\.cn\/include\/splash\/ url reject
+^https?:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*?Animation url reject-img
+^https?:\/\/az1mbasecc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec url reject
+^https?:\/\/intellicc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.render\.api\.render\/getDynamicDataSec url reject
+^http:\/\/cdn\.133\.cn\/md\/gtgj\/.+\/.+720x1280 url reject-dict
+^https:\/\/dictvip-business\.youdao\.com\/home\/ad url reject-dict
+^https:\/\/dict\.youdao\.com\/course\/tab\/translateTab url reject-dict
+^https:\/\/dict\.youdao\.com\/homepage\/tile url reject-dict
+^https:\/\/api-overmind\.youdao\.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig url reject-dict
+^https:\/\/cdke\.youdao\.com\/course3\/recommend\/dict\/startup url reject-dict
+^https:\/\/dict\.youdao\.com\/commonsearch url reject-dict
+^https:\/\/dict\.youdao\.com\/vip\/activity\/couponinfo url reject-dict
+^https:\/\/dict\.youdao\.com\/dictusertask\/system url reject-dict
+^https:\/\/imcs\.citicbank\.com\/cloud\/.+(1125.+2436|1242.+2688) url reject-200
+^https:\/\/img\.meituan\.net\/dpmobile\/.+93241\.png url reject-dict
+^https:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/graphic\/v2\/module\/graphic url reject-dict
+^https?://(ios|android)\.sogou\.com/[^/]+/sogou_input_[^/]+/[^/]+/index\.html url reject
+^https?:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/apphome6\/\w+\.json\? url reject-dict
+^https?:\/\/enjoy\.cdn-static\.abchina\.com\/yx-engine-web\/file\/download\/6bd18.*? url reject-200
+^https:\/\/hwimg\.beingfine\.cn\/float_button  url reject-dict
+^https:\/\/hwimg\.beingfine\.cn\/card url reject-dict
+^https:\/\/learnywhere\.cn\/api\/activity\/23\/423dsj\/inapp\/bb\/promote url reject-dict
