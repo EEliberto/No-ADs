@@ -24,3 +24,4 @@ hostname = hwimg.beingfine.cn, learnywhere.cn, enjoy.cdn-static.abchina.com, res
 ^https:\/\/learnywhere\.cn\/api\/activity\/23\/423dsj\/inapp\/bb\/promote url reject-dict
 ^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/hotActivity url reject-dict
 ^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/splash\?height url reject-dict
+^https?:\/\/wmapi\.meituan\.com\/api\/v7\/startpicture url reject-200
