@@ -1,4 +1,4 @@
-hostname = midc.cdn-static.abchina.com.cn, hwimg.beingfine.cn, learnywhere.cn, enjoy.cdn-static.abchina.com, res.kfc.com.cn, mbmodule-openapi.paas.cmbchina.com, az1mbasecc.bas.cmbchina.com, intellicc.bas.cmbchina.com, dictvip-business.youdao.com, dict.youdao.com,api-overmind.youdao.com,cdke.youdao.com
+hostname = maicai.api.ddxq.mobi, midc.cdn-static.abchina.com.cn, hwimg.beingfine.cn, learnywhere.cn, enjoy.cdn-static.abchina.com, res.kfc.com.cn, mbmodule-openapi.paas.cmbchina.com, az1mbasecc.bas.cmbchina.com, intellicc.bas.cmbchina.com, dictvip-business.youdao.com, dict.youdao.com,api-overmind.youdao.com,cdke.youdao.com
 
 ^https?:\/\/cloud\.189\.cn\/include\/splash\/ url reject
 ^https?:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*?Animation url reject-img
@@ -26,3 +26,5 @@ hostname = midc.cdn-static.abchina.com.cn, hwimg.beingfine.cn, learnywhere.cn, e
 ^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/splash\?height url reject-dict
 ^https?:\/\/wmapi\.meituan\.com\/api\/v7\/startpicture url reject-200
 ^https:\/\/midc\.cdn-static\.abchina\.com\.cn\/distributecenterimg\/file\/download\/bdfb4 url reject-dict
+^https:\/\/maicai\.api\.ddxq\.mobi\/advert\/getAd\?ad_id url reject-dict
+^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/getHomeAdPop url reject-dict
