@@ -1,0 +1,16 @@
+#!name = 京东去广告
+#!desc = 移除京东开屏广告
+
+[Rule]
+DOMAIN, dns.jd.com,REJECT
+IP-CIDR, 101.124.19.122/32,REJECT,no-resolve
+IP-CIDR6, 2402:db40:5100:1011::5/128,REJECT,no-resolve
+
+[Script]
+移除京东广告_14 = type=http-response, pattern=^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(personinfoBusiness|start), script-path=https://raw.githubusercontent.com/EEliberto/No-ADs/main/JD_remove_ads.js, requires-body=true, max-size=3145728, timeout=30
+
+[Map Local]
+^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=uniformRecommend data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+[MITM]
+hostname = %APPEND% api.m.jd.com
