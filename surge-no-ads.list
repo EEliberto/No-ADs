@@ -18,9 +18,6 @@ URL-REGEX,^https?:\/\/fuss10\.elemecdn\.com\/.+\/(w\/(640|750)\/h\/\d{3,4}|.+\.m
 URL-REGEX,^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welcome,REJECT
 # 航旅纵横
 URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native,REJECT
-# 腾讯手机管家
-^https://otheve.beacon.qq.com\/analytics\/upload\?sid=.* - reject
-^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ - reject
 # 顺丰速运
 ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/integralPlanet\/getCxAdvertiseList reject-dict
 ^https:\/\/ucmp-static\.sf-express\.com\/proxy\/wxbase\/wxTicket\/wxLiveStreamInfo\?pageNo reject-dict
@@ -70,6 +67,9 @@ https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal - reject
 ^https?:\/\/wrapper\.cyapi\.cn\/v1\/activity\? data="https://raw.githubusercontent.com/RuCu6/QuanX/main/Mocks/caiyun.json"
 # 米家
 ^https?:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|myTab|openingBanner) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# 腾讯手机管家
+^https://otheve.beacon.qq.com\/analytics\/upload\?sid=.* - reject
+^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ - reject
 # 招商银行
 ^https:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/graphic\/v2\/module\/graphic data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 # 有道云笔记
