@@ -18,6 +18,51 @@ URL-REGEX,^https?:\/\/fuss10\.elemecdn\.com\/.+\/(w\/(640|750)\/h\/\d{3,4}|.+\.m
 URL-REGEX,^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welcome,REJECT
 # 航旅纵横
 URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native,REJECT
+# 腾讯手机管家
+^https://otheve.beacon.qq.com\/analytics\/upload\?sid=.* - reject
+^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ - reject
+# 顺丰速运
+^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/integralPlanet\/getCxAdvertiseList reject-dict
+^https:\/\/ucmp-static\.sf-express\.com\/proxy\/wxbase\/wxTicket\/wxLiveStreamInfo\?pageNo reject-dict
+^https:\/\/ucmp\.sf-express\.com\/proxy\/operation-platform\/info-flow-adver\/query reject-dict
+^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/member(Goods\/pointMallService\/goodsList|Manage\/memberEquity\/queryRecommendEquity|ActLengthy\/fullGiveActivityService\/fullGiveInfo) reject-dict
+# 交管 12123
+^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ - reject
+^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery - reject
+# 禁止京东 DNS 解析
+^https?:\/\/dns\.jd\.com\/ - reject
+# 禁京东直播小窗
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=getWidgetV1052 - reject
+# 驾考宝典
+^https?:\/\/\w+\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/ - reject
+# 今日头条
+^https:\/\/p\d.pstatp.com\/origin - reject
+^https:\/\/pb\d.pstatp.com\/origin - reject
+# 拼多多
+^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash - reject
+# QQ钱包净化
+^https?:\/\/m\.qianbao\.qq\.com\/pages\/walletHome\?invisible - reject
+# 瑞幸咖啡
+^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/app\/adposNew - reject
+^https:\/\/(ec|c)api\.lkcoffee\.com\/resource\/m\/eorder\/product\/popAppTagProductList - reject
+# 少数派
+https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal - reject
+# 威锋
+^https:\/\/api\.wfdata\.club\/v2\/yesfeng\/(infoCenterAd|yesList) - reject
+^https?:\/\/res-release\.wuta-cam\.com\/json\/ads_component_cache\.json - reject
+# 小米运动
+^https:\/\/api-mifit-cn2\.huami\.com\/discovery\/mi\/cards\/startpage_ad - reject
+# 中国电信
+^https?:\/\/cloud\.189\.cn\/include\/splash\/ - reject
+^https:\/\/api\.zhihu\.com\/unlimited\/go\/my_card - reject
+^https:\/\/www\.zhihu\.com\/appview\/v2\/zhmore - reject
+#掌上生活
+^https?:\/\/az1mbasecc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec - reject
+^https?:\/\/intellicc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.render\.api\.render\/getDynamicDataSec - reject
+# 飞猪旅行
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryloadingbanner url reject-dict
+# 高铁管家
+^http:\/\/cdn\.133\.cn\/md\/gtgj\/.+\/.+720x1280 url reject-dict
 
 [Map Local]
 # 彩云天气移除赏花地图 & 赏叶地图
@@ -25,11 +70,26 @@ URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/
 ^https?:\/\/wrapper\.cyapi\.cn\/v1\/activity\? data="https://raw.githubusercontent.com/RuCu6/QuanX/main/Mocks/caiyun.json"
 # 米家
 ^https?:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|myTab|openingBanner) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# 招商银行
+^https:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/graphic\/v2\/module\/graphic data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# 有道云笔记
+^https:\/\/dictvip-business\.youdao\.com\/home\/ad data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/dict\.youdao\.com\/course\/tab\/translateTab data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/dict\.youdao\.com\/homepage\/tile data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/api-overmind\.youdao\.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/cdke\.youdao\.com\/course3\/recommend\/dict\/startup data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/dict\.youdao\.com\/commonsearch data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/dict\.youdao\.com\/vip\/activity\/couponinfo data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/dict\.youdao\.com\/dictusertask\/system data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# 叮咚买菜
+^https:\/\/maicai\.api\.ddxq\.mobi\/advert\/getAd\?ad_id data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/getHomeAdPop data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# KFC
+^https?:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/apphome6\/\w+\.json\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
 [Script]
-Keep.js = type=http-response,pattern=^https?:\/\/api\.gotokeep\.com\/(athena\/v\d\/people\/my|config\/v\d\/basic|homepage\/v\d\/tab|nuocha\/course\/v2\/\w+\/preview|sportpage\/sport\/v3\/mysport)$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/keepStyle.js
 # 酷安去广告
 coolapk.js = type=http-response,pattern=^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(detail|replyList)\?|main\/(dataList|indexV8|init)|page\/dataList\?)$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
 
 [MITM]
-hostname = %APPEND% api-sams.walmartmobile.cn,wallet.95516.com,*.elemecdn.com,www1.elecfans.com,home.mi.com,api.coolapk.com,home.umetrip.com,startup.umetrip.com,discardrp.umetrip.com,api.caiyunapp.com,wrapper.cyapi.cn
+hostname = %APPEND% api-sams.walmartmobile.cn,wallet.95516.com,*.elemecdn.com,www1.elecfans.com,home.mi.com,api.coolapk.com,home.umetrip.com,startup.umetrip.com,discardrp.umetrip.com,api.caiyunapp.com,wrapper.cyapi.cn,beacon.qq.com,4gimg.map.qq.com,mcs-mimp-web.sf-express.com, ucmp-static.sf-express.com, ucmp.sf-express.com,dns.jd.com,api.m.jd.com,m.jd.com,*.kakamobi.cn,p*.pstatp.com,api.pinduoduo.com,m.qianbao.qq.com,ecapi.lkcoffee.com,capi.lkcoffee.com,m.lkcoffee.com,ios.sspai.com,api.wfdata.club,dsa-mfp.fengshows.cn,*-release.wuta-cam.com,api-mifit.huami.com，com,api.cloud.189.cn,mbmodule-openapi.paas.cmbchina.com,az1mbasecc.bas.cmbchina.com,intellicc.bas.cmbchina.com,maicai.api.ddxq.mobi,res.kfc.com.cn
