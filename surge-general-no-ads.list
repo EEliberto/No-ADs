@@ -2,22 +2,7 @@
 #!desc = 通用 App 去广告
 #!system = ios
 
-[Rule]
-# 山姆
-URL-REGEX,^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v1\/sams\/sams-user\/(window\/getGoUpPlus|screen_promotion\/get),REJECT
-# Keep
-URL-REGEX,^https?:\/\/api\.gotokeep\.com\/(kprime\/v\d\/popups\/primeGuide|cauchy\/growth\/init|search\/v\d\/(default\/keyword\/list|hotword\/list|hotCourse\/list)|op-engine-webapp\/v\d\/ad|ads\/v\d\/ads\/preload|training\/box\/config|anno\/v\d\/upgrade\/check)$,REJECT
-URL-REGEX,^https?:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v\d\/ad,REJECT
-# 云闪付
-URL-REGEX,^https?:\/\/wallet\.95516\.com(:10533)?\/s\/wl\/icon\/large\/1,REJECT
-# 饿了么
-URL-REGEX,^https?:\/\/elemecdn.com\/.+\/sitemap,REJECT
-URL-REGEX,^https?:\/\/www1.elecfans.com\/www\/delivery,REJECT
-URL-REGEX,^https?:\/\/fuss10\.elemecdn\.com\/.+\/(w\/(640|750)\/h\/\d{3,4}|.+\.mp4)$,REJECT
-# 大麦
-URL-REGEX,^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welcome,REJECT
-# 航旅纵横
-URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native,REJECT
+[URL Rewrite]
 # 交管 12123
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ - reject
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery - reject
@@ -55,6 +40,31 @@ https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal - reject
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryloadingbanner url reject-dict
 # 高铁管家
 ^http:\/\/cdn\.133\.cn\/md\/gtgj\/.+\/.+720x1280 url reject-dict
+# 顺丰速运
+^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/integralPlanet\/getCxAdvertiseList reject-dict
+^https:\/\/ucmp-static\.sf-express\.com\/proxy\/wxbase\/wxTicket\/wxLiveStreamInfo\?pageNo reject-dict
+^https:\/\/ucmp\.sf-express\.com\/proxy\/operation-platform\/info-flow-adver\/query reject-dict
+^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/member(Goods\/pointMallService\/goodsList|Manage\/memberEquity\/queryRecommendEquity|ActLengthy\/fullGiveActivityService\/fullGiveInfo) reject-dict
+# 腾讯手机管家
+^https://otheve.beacon.qq.com\/analytics\/upload\?sid=.* - reject
+^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ - reject
+
+[Rule]
+# 山姆
+URL-REGEX,^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v1\/sams\/sams-user\/(window\/getGoUpPlus|screen_promotion\/get),REJECT
+# Keep
+URL-REGEX,^https?:\/\/api\.gotokeep\.com\/(kprime\/v\d\/popups\/primeGuide|cauchy\/growth\/init|search\/v\d\/(default\/keyword\/list|hotword\/list|hotCourse\/list)|op-engine-webapp\/v\d\/ad|ads\/v\d\/ads\/preload|training\/box\/config|anno\/v\d\/upgrade\/check)$,REJECT
+URL-REGEX,^https?:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v\d\/ad,REJECT
+# 云闪付
+URL-REGEX,^https?:\/\/wallet\.95516\.com(:10533)?\/s\/wl\/icon\/large\/1,REJECT
+# 饿了么
+URL-REGEX,^https?:\/\/elemecdn.com\/.+\/sitemap,REJECT
+URL-REGEX,^https?:\/\/www1.elecfans.com\/www\/delivery,REJECT
+URL-REGEX,^https?:\/\/fuss10\.elemecdn\.com\/.+\/(w\/(640|750)\/h\/\d{3,4}|.+\.mp4)$,REJECT
+# 大麦
+URL-REGEX,^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welcome,REJECT
+# 航旅纵横
+URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native,REJECT
 
 [Map Local]
 # 彩云天气移除赏花地图 & 赏叶地图
@@ -62,9 +72,6 @@ https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal - reject
 ^https?:\/\/wrapper\.cyapi\.cn\/v1\/activity\? data="https://raw.githubusercontent.com/RuCu6/QuanX/main/Mocks/caiyun.json"
 # 米家
 ^https?:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|myTab|openingBanner) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# 腾讯手机管家
-^https://otheve.beacon.qq.com\/analytics\/upload\?sid=.* - reject
-^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ - reject
 # 招商银行
 ^https:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/graphic\/v2\/module\/graphic data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 # 有道云笔记
@@ -81,12 +88,6 @@ https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal - reject
 ^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/getHomeAdPop data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 # KFC
 ^https?:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/apphome6\/\w+\.json\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# 顺丰速运
-^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/integralPlanet\/getCxAdvertiseList reject-dict
-^https:\/\/ucmp-static\.sf-express\.com\/proxy\/wxbase\/wxTicket\/wxLiveStreamInfo\?pageNo reject-dict
-^https:\/\/ucmp\.sf-express\.com\/proxy\/operation-platform\/info-flow-adver\/query reject-dict
-^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/member(Goods\/pointMallService\/goodsList|Manage\/memberEquity\/queryRecommendEquity|ActLengthy\/fullGiveActivityService\/fullGiveInfo) reject-dict
-
 [Script]
 # 酷安去广告
 coolapk.js = type=http-response,pattern=^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(detail|replyList)\?|main\/(dataList|indexV8|init)|page\/dataList\?)$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
