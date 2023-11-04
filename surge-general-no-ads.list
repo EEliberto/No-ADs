@@ -6,10 +6,6 @@
 # 交管 12123
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ - reject
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery - reject
-# 禁止京东 DNS 解析
-^https?:\/\/dns\.jd\.com\/ - reject
-# 禁京东直播小窗
-^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=getWidgetV1052 - reject
 # 驾考宝典
 ^https?:\/\/\w+\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/ - reject
 # 今日头条
