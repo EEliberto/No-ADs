@@ -46,6 +46,8 @@ https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal - reject
 ^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ - reject
 
 [Rule]
+# Blued
+DOMAIN-SUFFIX,img2.360buyimg.com,REJECT
 # 山姆
 URL-REGEX,^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v1\/sams\/sams-user\/(window\/getGoUpPlus|screen_promotion\/get),REJECT
 # Keep
