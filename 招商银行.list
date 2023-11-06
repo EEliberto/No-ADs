@@ -1,0 +1,5 @@
+#临时
+webappcfg.paas.cmbchina.com     
+
+
+^https?:\/\/webappcfg\.paas\.cmbchina\.com\/v\d\/func\/getmarketconfig url reject-200
