@@ -60,8 +60,6 @@ URL-REGEX,^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welc
 URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native,REJECT
 
 [Map Local]
-# 阿里网盘
-^https:\/\/member\.alipan\.com\/v2\/activity\/sign_in_info data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 # 飞猪旅行
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryloadingbanner data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 # 高铁管家
