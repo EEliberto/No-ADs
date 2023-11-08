@@ -3,8 +3,6 @@
 #!system = ios
 
 [URL Rewrite]
-# 阿里网盘
-^https:\/\/member\.alipan\.com\/v2\/activity\/sign_in_info url reject-dict
 # 交管 12123
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ - reject
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery - reject
@@ -34,10 +32,6 @@ https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal - reject
 # 掌上生活
 ^https?:\/\/az1mbasecc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec - reject
 ^https?:\/\/intellicc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.render\.api\.render\/getDynamicDataSec - reject
-# 飞猪旅行
-^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryloadingbanner url reject-dict
-# 高铁管家
-^http:\/\/cdn\.133\.cn\/md\/gtgj\/.+\/.+720x1280 url reject-dict
 # 顺丰速运
 ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/integralPlanet\/getCxAdvertiseList reject-dict
 ^https:\/\/ucmp-static\.sf-express\.com\/proxy\/wxbase\/wxTicket\/wxLiveStreamInfo\?pageNo reject-dict
@@ -69,6 +63,12 @@ URL-REGEX,^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welc
 URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native,REJECT
 
 [Map Local]
+# 阿里网盘
+^https:\/\/member\.alipan\.com\/v2\/activity\/sign_in_info data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# 飞猪旅行
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryloadingbanner data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# 高铁管家
+^http:\/\/cdn\.133\.cn\/md\/gtgj\/.+\/.+720x1280 data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 # 彩云天气移除赏花地图 & 赏叶地图
 ^https?:\/\/api\.caiyunapp\.com\/v1\/activity\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 ^https?:\/\/wrapper\.cyapi\.cn\/v1\/activity\? data="https://raw.githubusercontent.com/RuCu6/QuanX/main/Mocks/caiyun.json"
