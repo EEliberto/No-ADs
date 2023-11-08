@@ -3,6 +3,8 @@
 #!system = ios
 
 [URL Rewrite]
+# 阿里网盘
+^https:\/\/member\.alipan\.com\/v2\/activity\/sign_in_info url reject-dict
 # 交管 12123
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ - reject
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery - reject
