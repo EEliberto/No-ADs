@@ -34,6 +34,15 @@ https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal - reject
 # 掌上生活
 ^https?:\/\/az1mbasecc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec - reject
 ^https?:\/\/intellicc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.render\.api\.render\/getDynamicDataSec - reject
+# 飞猪旅行
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryloadingbanner url reject-dict
+# 高铁管家
+^http:\/\/cdn\.133\.cn\/md\/gtgj\/.+\/.+720x1280 url reject-dict
+# 顺丰速运
+^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/integralPlanet\/getCxAdvertiseList reject-dict
+^https:\/\/ucmp-static\.sf-express\.com\/proxy\/wxbase\/wxTicket\/wxLiveStreamInfo\?pageNo reject-dict
+^https:\/\/ucmp\.sf-express\.com\/proxy\/operation-platform\/info-flow-adver\/query reject-dict
+^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/member(Goods\/pointMallService\/goodsList|Manage\/memberEquity\/queryRecommendEquity|ActLengthy\/fullGiveActivityService\/fullGiveInfo) reject-dict
 # 腾讯手机管家
 ^https://otheve.beacon.qq.com\/analytics\/upload\?sid=.* - reject
 ^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ - reject
@@ -90,4 +99,4 @@ coolapk.js = type=http-response,pattern=^https?:\/\/api\.coolapk\.com\/v6\/(feed
 彩云天气 Pro=type=http-response,pattern=^http[s]?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn)\/v2\/user.*$,requires-body=1,script-path=https://raw.githubusercontent.com/WeiRen0/Scripts/main/cytq.js
 
 [MITM]
-hostname = %APPEND% api-sams.walmartmobile.cn,wallet.95516.com,*.elemecdn.com,www1.elecfans.com,home.mi.com,api.coolapk.com,home.umetrip.com,startup.umetrip.com,discardrp.umetrip.com,api.caiyunapp.com,wrapper.cyapi.cn,*.caiyunapp.cn,*.cyapi.com,beacon.qq.com,4gimg.map.qq.com,mcs-mimp-web.sf-express.com, ucmp-static.sf-express.com, ucmp.sf-express.com,dns.jd.com,api.m.jd.com,m.jd.com,*.kakamobi.cn,p*.pstatp.com,api.pinduoduo.com,m.qianbao.qq.com,ecapi.lkcoffee.com,capi.lkcoffee.com,m.lkcoffee.com,ios.sspai.com,api.wfdata.club,dsa-mfp.fengshows.cn,*-release.wuta-cam.com,api-mifit.huami.com，com,api.cloud.189.cn,mbmodule-openapi.paas.cmbchina.com,az1mbasecc.bas.cmbchina.com,intellicc.bas.cmbchina.com,maicai.api.ddxq.mobi,res.kfc.com.cn,webappcfg.paas.cmbchina.com
+hostname = %APPEND% api-sams.walmartmobile.cn,wallet.95516.com,*.elemecdn.com,www1.elecfans.com,home.mi.com,api.coolapk.com,home.umetrip.com,startup.umetrip.com,discardrp.umetrip.com,*.caiyunapp.com,*.cyapi.com,*.cyapi.cn ,*.caiyunapp.cn,beacon.qq.com,4gimg.map.qq.com,mcs-mimp-web.sf-express.com, ucmp-static.sf-express.com, ucmp.sf-express.com,dns.jd.com,api.m.jd.com,m.jd.com,*.kakamobi.cn,p*.pstatp.com,api.pinduoduo.com,m.qianbao.qq.com,ecapi.lkcoffee.com,capi.lkcoffee.com,m.lkcoffee.com,ios.sspai.com,api.wfdata.club,dsa-mfp.fengshows.cn,*-release.wuta-cam.com,api-mifit.huami.com，com,api.cloud.189.cn,mbmodule-openapi.paas.cmbchina.com,az1mbasecc.bas.cmbchina.com,intellicc.bas.cmbchina.com,maicai.api.ddxq.mobi,res.kfc.com.cn,webappcfg.paas.cmbchina.com
