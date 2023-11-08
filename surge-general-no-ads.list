@@ -40,6 +40,8 @@ https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal - reject
 ^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ - reject
 
 [Rule]
+# 12306
+DOMAIN,ad.12306.cn,DIRECT
 # 淘宝
 DOMAIN,amdc.m.taobao.com,REJECT
 # Blued
@@ -85,6 +87,8 @@ URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/
 ^https?:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/apphome6\/\w+\.json\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
 [Script]
+# 12306
+12306_0 = type=http-request, pattern=http://script.hub/convert/_start_/^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/kokoryh/Script/master/js/12306.js, timeout=60, script-update-interval=0
 # 酷安
 coolapk.js = type=http-response,pattern=^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(detail|replyList)\?|main\/(dataList|indexV8|init)|page\/dataList\?)$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
 # 彩云天气 Pro
