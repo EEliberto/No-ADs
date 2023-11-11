@@ -1,2 +1,0 @@
-http://script.hub/convert/_start_/^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList url script-analyze-echo-response https://raw.githubusercontent.com/kokoryh/Script/master/js/12306.js
-/_end_/%5Ehttps.js?type=qx-script&target=surge-script
