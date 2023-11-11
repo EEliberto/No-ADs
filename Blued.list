@@ -1,0 +1,6 @@
+^https:\/\/voice\.blued\.cn\/users\/chatroom\/nearby\/ url reject-dict
+^https:\/\/social\.blued\.cn\/users\/100449310\/more\/ios\?v=2 url reject-dict
+^https:\/\/argo\.blued\.cn\/blued\/launch\/adms url reject-dict
+^https:\/\/live\.blued\.cn\/live\/cates-v2\/0\?page=1 url reject-dict
+
+hostname = voice.blued.cn, live.blued.cn, argo.blued.cn, social.blued.cn
