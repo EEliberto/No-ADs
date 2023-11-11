@@ -40,11 +40,6 @@ https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal - reject
 ^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ - reject
 
 [Rule]
-# 好福利
-[Rule]
-DOMAIN,jkcdn.pajk.com.cn,REJECT
-DOMAIN,livecdn.zgpajf.com.cn,REJECT
-DOMAIN,iobs.pingan.com.cn,REJECT
 # 淘宝
 DOMAIN,amdc.m.taobao.com,REJECT
 # Blued
