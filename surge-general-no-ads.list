@@ -35,10 +35,6 @@ https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal - reject
 ^https?:\/\/az1mbasecc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec - reject
 ^https?:\/\/intellicc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.render\.api\.render\/getDynamicDataSec - reject
 
-# 腾讯手机管家
-^https://otheve.beacon.qq.com\/analytics\/upload\?sid=.* - reject
-^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ - reject
-
 [Rule]
 # 淘宝
 DOMAIN,amdc.m.taobao.com,REJECT
