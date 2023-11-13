@@ -1,0 +1,30 @@
+#!name = Parallels Desktop 弹窗屏蔽
+#!desc = 屏蔽下列网址，以避免弹窗出现，
+
+[Rule]
+DOMAIN-SUFFIX,update.parallels.com,REJECT
+DOMAIN-SUFFIX,desktop.parallels.com,REJECT
+DOMAIN-SUFFIX,update.parallels.com.cdn.cloudflare.net,REJECT
+DOMAIN-SUFFIX,desktop.parallels.com.cdn.cloudflare.net,REJECT
+DOMAIN-SUFFIX,www.parallels.cn,REJECT
+DOMAIN-SUFFIX,www.parallels.com,REJECT
+DOMAIN-SUFFIX,www.parallels.de,REJECT
+DOMAIN-SUFFIX,www.parallels.es,REJECT
+DOMAIN-SUFFIX,www.parallels.fr,REJECT
+DOMAIN-SUFFIX,www.parallels.nl,REJECT
+DOMAIN-SUFFIX,www.parallels.pt,REJECT
+DOMAIN-SUFFIX,www.parallels.ru,REJECT
+DOMAIN-SUFFIX,www.parallelskorea.com,REJECT
+DOMAIN-SUFFIX,reportus.parallels.com,REJECT
+DOMAIN-SUFFIX,parallels.cn,REJECT
+DOMAIN-SUFFIX,parallels.com,REJECT
+DOMAIN-SUFFIX,parallels.de,REJECT
+DOMAIN-SUFFIX,parallels.es,REJECT
+DOMAIN-SUFFIX,parallels.fr,REJECT
+DOMAIN-SUFFIX,parallels.nl,REJECT
+DOMAIN-SUFFIX,parallels.pt,REJECT
+DOMAIN-SUFFIX,parallels.ru,REJECT
+DOMAIN-SUFFIX,parallelskorea.com,REJECT
+DOMAIN-SUFFIX,pax-manager.myparallels.com,REJECT
+DOMAIN-SUFFIX,myparallels.com,REJECT
+DOMAIN-SUFFIX,my.parallels.com,REJECT
