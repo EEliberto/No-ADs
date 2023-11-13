@@ -3,16 +3,11 @@
 #!system = ios
 
 [URL Rewrite]
-# 交管 12123
-^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ - reject
-^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery - reject
 # 驾考宝典
 ^https?:\/\/\w+\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/ - reject
 # 今日头条
 ^https:\/\/p\d.pstatp.com\/origin - reject
 ^https:\/\/pb\d.pstatp.com\/origin - reject
-# 拼多多
-^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash - reject
 # QQ 钱包
 ^https?:\/\/m\.qianbao\.qq\.com\/pages\/walletHome\?invisible - reject
 # 瑞幸咖啡
@@ -83,8 +78,6 @@ URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/
 # 叮咚买菜
 ^https:\/\/maicai\.api\.ddxq\.mobi\/advert\/getAd\?ad_id data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 ^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/getHomeAdPop data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# KFC
-^https?:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/apphome6\/\w+\.json\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 # 顺丰速运
 ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/integralPlanet\/getCxAdvertiseList data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 ^https:\/\/ucmp-static\.sf-express\.com\/proxy\/wxbase\/wxTicket\/wxLiveStreamInfo\?pageNo data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
@@ -92,12 +85,8 @@ URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/
 ^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/member(Goods\/pointMallService\/goodsList|Manage\/memberEquity\/queryRecommendEquity|ActLengthy\/fullGiveActivityService\/fullGiveInfo) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
 [Script]
-# 12306
-12306_0 = type=http-request, pattern=http://script.hub/convert/_start_/^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/kokoryh/Script/master/js/12306.js, timeout=60, script-update-interval=0
-# 酷安
-coolapk.js = type=http-response,pattern=^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(detail|replyList)\?|main\/(dataList|indexV8|init)|page\/dataList\?)$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
 # 彩云天气 Pro
 彩云天气 Pro=type=http-response,pattern=^http[s]?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn)\/v2\/user.*$,requires-body=1,script-path=https://raw.githubusercontent.com/WeiRen0/Scripts/main/cytq.js
 
 [MITM]
-hostname = %APPEND% api.petkit.cn, hfapp-service.qweather.net, api-sams.walmartmobile.cn,wallet.95516.com,*.elemecdn.com,www1.elecfans.com,home.mi.com,api.coolapk.com,home.umetrip.com,startup.umetrip.com,discardrp.umetrip.com,beacon.qq.com,4gimg.map.qq.com,dns.jd.com,api.m.jd.com,m.jd.com,*.kakamobi.cn,p*.pstatp.com,api.pinduoduo.com,m.qianbao.qq.com,ecapi.lkcoffee.com,capi.lkcoffee.com,m.lkcoffee.com,ios.sspai.com,api.wfdata.club,dsa-mfp.fengshows.cn,*-release.wuta-cam.com,api-mifit.huami.com，com,api.cloud.189.cn,mbmodule-openapi.paas.cmbchina.com,az1mbasecc.bas.cmbchina.com,intellicc.bas.cmbchina.com,maicai.api.ddxq.mobi,res.kfc.com.cn,webappcfg.paas.cmbchina.com,mcs-mimp-web.sf-express.com,ucmp-static.sf-express.com,ucmp.sf-express.com,voice.blued.cn,live.blued.cn,argo.blued.cn,social.blued.cn
+hostname = %APPEND% api.petkit.cn, hfapp-service.qweather.net, api-sams.walmartmobile.cn,wallet.95516.com,*.elemecdn.com,www1.elecfans.com,home.mi.com,api.coolapk.com,home.umetrip.com,startup.umetrip.com,discardrp.umetrip.com,beacon.qq.com,4gimg.map.qq.com,dns.jd.com,api.m.jd.com,m.jd.com,*.kakamobi.cn,p*.pstatp.com,m.qianbao.qq.com,ecapi.lkcoffee.com,capi.lkcoffee.com,m.lkcoffee.com,ios.sspai.com,api.wfdata.club,dsa-mfp.fengshows.cn,*-release.wuta-cam.com,api-mifit.huami.com，com,api.cloud.189.cn,mbmodule-openapi.paas.cmbchina.com,az1mbasecc.bas.cmbchina.com,intellicc.bas.cmbchina.com,maicai.api.ddxq.mobi,webappcfg.paas.cmbchina.com,mcs-mimp-web.sf-express.com,ucmp-static.sf-express.com,ucmp.sf-express.com,voice.blued.cn,live.blued.cn,argo.blued.cn,social.blued.cn
