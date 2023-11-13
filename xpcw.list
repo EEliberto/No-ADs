@@ -1,0 +1,3 @@
+^https:\/\/api\.petkit\.cn\/6\/\/device\/relatedProductsInfo url reject-dict
+
+hostname = api.petkit.cn
