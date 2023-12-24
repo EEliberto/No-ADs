@@ -62,6 +62,7 @@ URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/
 ^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getLoadPic data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 # 小佩宠物
 ^https:\/\/api\.petkit\.cn\/6\/\/device\/relatedProductsInfo data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/api\.petkit\.cn\/6\/post\/getSplash data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 # Blued
 ^https:\/\/voice\.blued\.cn\/users\/chatroom\/nearby\/ data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 ^https:\/\/social\.blued\.cn\/users\/100449310\/more\/ios\?v=2 data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
