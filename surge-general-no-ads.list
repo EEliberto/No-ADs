@@ -59,6 +59,7 @@ URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/
 # 正气助手
 ^https:\/\/apio\.zhengqi100\.com\/forum\/thread\/listsHome data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 # 吉祥航空
+^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getPictureList data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 ^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getLoadPic data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 # 小佩宠物
 ^https:\/\/api\.petkit\.cn\/6\/\/device\/relatedProductsInfo data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
