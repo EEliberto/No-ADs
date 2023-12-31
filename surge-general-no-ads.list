@@ -33,8 +33,6 @@ https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal - reject
 DOMAIN,dns.jd.com,REJECT
 IP-CIDR,101.124.19.122/32,REJECT,no-resolve
 IP-CIDR6,2402:db40:5100:1011::5/128,REJECT,no-resolve
-# 淘宝
-DOMAIN,amdc.m.taobao.com,REJECT
 # Blued
 DOMAIN-SUFFIX,img2.360buyimg.com,REJECT
 DOMAIN-SUFFIX,mores.toponad.com,REJECT
