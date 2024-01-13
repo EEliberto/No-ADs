@@ -24,9 +24,8 @@ https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal - reject
 ^https?:\/\/cloud\.189\.cn\/include\/splash\/ - reject
 ^https:\/\/api\.zhihu\.com\/unlimited\/go\/my_card - reject
 ^https:\/\/www\.zhihu\.com\/appview\/v2\/zhmore - reject
-# 掌上生活
-^https?:\/\/az1mbasecc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec - reject
-^https?:\/\/intellicc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.render\.api\.render\/getDynamicDataSec - reject
+# 腾讯手机管家
+^https:\/\/ios\.rqd\.qq\.com\/analytics\/rqdsync\?aid=.* - reject
 
 [Rule]
 # 京东
