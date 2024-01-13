@@ -1,1 +1,2 @@
-^https:\/\/api\.petkit\.cn\/6\/post\/getSplash url reject-dict
+^https://ios.rqd.qq.com\/analytics\/rqdsync\?aid=.* url reject
+
