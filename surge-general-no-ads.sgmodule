@@ -28,6 +28,8 @@ https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal - reject
 ^https:\/\/ios\.rqd\.qq\.com\/analytics\/rqdsync\?aid=.* - reject
 
 [Rule]
+# iQIYI
+DOMAIN,ad.doubleclick.net,REJECT
 # 京东
 DOMAIN,dns.jd.com,REJECT
 IP-CIDR,101.124.19.122/32,REJECT,no-resolve
