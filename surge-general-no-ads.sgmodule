@@ -28,6 +28,10 @@ https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal - reject
 ^https:\/\/ios\.rqd\.qq\.com\/analytics\/rqdsync\?aid=.* - reject
 
 [Rule]
+# 哔咔漫画
+DOMAIN, ad-channel.diwodiwo.xyz, REJECT
+DOMAIN, ad-channel.wikawika.xyz, REJECT
+DOMAIN, ad-display.diwodiwo.xyz, REJECT
 # iQIYI
 DOMAIN,ad.doubleclick.net,REJECT
 # 京东
