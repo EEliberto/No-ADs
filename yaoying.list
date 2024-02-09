@@ -1,0 +1,5 @@
+# 曜影医疗
+^https:\/\/userpms-api\.suh\.cn\/apt\/api\/bannar\/PageList\?sysSearchKey=sysPat&showSearchKey=advertising&pageIndex=1&pagesize=100&lanSearchValue=1&locationSearchKey=&status=1&appname=pmsys&channel=6&device=ios&language=1&source=2&version=6\.61 url reject-dict
+^https:\/\/patient-api\.suh\.cn\/apt\/api\/userinfo\/GetNotice\?appname=pmsys&channel=6&device=ios&language=1&source=2&version=6\.61 url reject-dict
+
+hostname = userpms-api.suh.cn, patient-api.suh.cn
