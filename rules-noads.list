@@ -1,0 +1,181 @@
+#QQ 音乐
+DOMAIN,adstats.tencentmusic.com,REJECT-DROP
+DOMAIN,ad.tencentmusic.com,REJECT-DROP
+DOMAIN,adcdn.tencentmusic.com,REJECT
+DOMAIN,adcdn6.tencentmusic.com,REJECT
+DOMAIN,adexpo.tencentmusic.com,REJECT
+DOMAIN,adclick.tencentmusic.com,REJECT
+DOMAIN,otheve.beacon.qq.com,REJECT-DROP
+DOMAIN,monitor.music.qq.com,REJECT-DROP
+DOMAIN,stat.y.qq.com,REJECT
+DOMAIN,tmead.y.qq.com,REJECT-NO-DROP
+DOMAIN,oth.str.mdt.qq.com,REJECT
+DOMAIN,h.trace.qq.com,REJECT
+DOMAIN,sdk.e.qq.com,REJECT
+DOMAIN,p.l.qq.com,REJECT
+DOMAIN,us.l.qq.com,REJECT
+DOMAIN,tangram.e.qq.com,REJECT
+DOMAIN-SUFFIX,imtmp.net,REJECT
+# 字节跳动 - 广告服务商
+DOMAIN,ad.zijieapi.com,REJECT
+DOMAIN,i.snssdk.com,REJECT
+DOMAIN,is.snssdk.com,REJECT
+DOMAIN-KEYWORD,-ad-sign.byteimg.com,REJECT
+DOMAIN-KEYWORD,-tos.pstatp.com,REJECT-DROP
+DOMAIN-KEYWORD,asiad.byteactivity,REJECT
+DOMAIN-KEYWORD,pangolin.snssdk.com,REJECT
+DOMAIN-KEYWORD,pangolin-sdk-toutiao,REJECT
+DOMAIN-KEYWORD,pglstatp-toutiao,REJECT
+DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
+# 快手联盟 - 广告服务商
+DOMAIN,open.e.kuaishou.com,REJECT
+# 秒针系统 - 广告服务商
+DOMAIN-SUFFIX,miaozhen.com,REJECT
+# 达佳互联 - 广告服务商
+DOMAIN-SUFFIX,adukwai.com,REJECT
+# 艾狄墨搏 - 广告服务商
+DOMAIN,monitor.ssp.admobile.top,REJECT
+DOMAIN,sdk.ssp.admobile.top,REJECT
+DOMAIN-SUFFIX,admobile.top,REJECT
+# 极光 - 广告服务商
+DOMAIN-SUFFIX,jiguang.cn,REJECT
+# 百度联盟 - 广告服务商
+DOMAIN-SUFFIX,union.baidu.cn,REJECT
+DOMAIN-SUFFIX,union.baidu.com,REJECT
+# 腾讯优量汇 - 广告服务商
+DOMAIN,mazu.m.qq.com,REJECT
+DOMAIN,sdk.e.qq.com,REJECT
+# 天目 - 广告服务商
+DOMAIN,sdk.tianmu.mobi,REJECT
+# 阿里巴巴
+DOMAIN,ossgw.alicdn.com,REJECT
+DOMAIN,ems.youku.com,REJECT
+DOMAIN,hudong.alicdn.com,REJECT
+DOMAIN-SUFFIX,ut.taobao.com,REJECT
+# 腾讯
+DOMAIN,adsmind.gdtimg.com,REJECT
+DOMAIN,info4.video.qq.com,REJECT
+DOMAIN,info6.video.qq.com,REJECT
+DOMAIN,ios.video.mpush.qq.com,REJECT
+DOMAIN,otheve.beacon.qq.com,REJECT
+DOMAIN,pgdt.gtimg.cn,REJECT
+DOMAIN,tmead.y.qq.com,REJECT-NO-DROP
+DOMAIN,tmeadbak.y.qq.com,REJECT
+DOMAIN,tmeadcomm.y.qq.com,REJECT
+DOMAIN,tpns.qq.com,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN-SUFFIX,l.qq.com,REJECT
+DOMAIN-KEYWORD,trace.qq.com,REJECT
+DOMAIN-KEYWORD,trace.video.qq.com,REJECT
+IP-CIDR,47.110.187.87/32,REJECT
+# 手机QQ
+DOMAIN,adsmind.gdtimg.com,REJECT
+DOMAIN,pgdt.gtimg.cn,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+# 百度
+DOMAIN,mobads.baidu.com,REJECT
+DOMAIN-SUFFIX,pos.baidu.com,REJECT
+# 美团
+DOMAIN,al-log.d.meituan.net,REJECT
+DOMAIN,babel-statistics-android.d.meituan.net,REJECT
+DOMAIN,maplocatesdksnapshot.d.meituan.net,REJECT
+DOMAIN,metrics-picture.d.meituan.net,REJECT
+DOMAIN,route-stats.d.meituan.net,REJECT
+# Outlook
+DOMAIN,acdn.adnxs.com,REJECT
+DOMAIN,mediation.adnxs.com,REJECT
+DOMAIN,sin3-ib.adnxs.com,REJECT
+# 酷我音乐去广告
+DOMAIN,splashimgbssdl.yun.kugou.com,REJECT
+DOMAIN,report.tencentmusic.com,REJECT
+DOMAIN,ad.tencentmusic.com,REJECT
+DOMAIN,adstats.tencentmusic.com,REJECT
+URL-REGEX,^http:\/\/wapi\.kuwo\.cn\/openapi\/v1\/album\/adBar,REJECT
+URL-REGEX,^http:\/\/wapi\.kuwo\.cn\/openapi\/v1\/app\/pasterAdvert,REJECT
+URL-REGEX,^http:\/\/mobilead\.kuwo\.cn\/MobileAdServer,REJECT
+URL-REGEX,^http:\/\/mobilead\.kuwo\.cn\/EcomResourceServer,REJECT
+URL-REGEX,^http:\/\/wapi\.kuwo\.cn\/openapi\/v1\/app\/startup,REJECT
+URL-REGEX,^http:\/\/rich\.kuwo\.cn\/AdService,REJECT
+# 小米
+DOMAIN,sdkconfig.ad.xiaomi.com,REJECT-DROP
+DOMAIN,data.mistat.xiaomi.com,REJECT
+DOMAIN,tracking.intl.miui.com,REJECT
+# 米家
+DOMAIN,sdkconfig.ad.xiaomi.com,REJECT
+# 通用广告
+DOMAIN-SUFFIX,doubleclick-cn.net,REJECT
+DOMAIN-SUFFIX,doubleclick.net,REJECT
+# 虎牙直播开屏广告
+DOMAIN,business.msstatic.com,REJECT
+DOMAIN-SUFFIX,v1d.szbdyd.com,REJECT
+URL-REGEX,^http:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns$,REJECT
+# 中国移动
+IP-CIDR,120.240.95.37/32,REJECT
+# 中国联通
+DOMAIN-SUFFIX,m1.ad.10010.com,REJECT
+# 中国电信
+DOMAIN,ad.21cn.com,REJECT
+DOMAIN,ad.k.21cn.com,REJECT
+DOMAIN,admarket.21cn.com,REJECT
+DOMAIN,adshows.21cn.com,REJECT
+IP-CIDR,122.229.8.47/32,REJECT
+IP-CIDR,122.229.29.89/32,REJECT
+# 弃用地址
+DOMAIN,waapdg.jd.com,REJECT
+# 18 禁
+DOMAIN,4lke.online,REJECT
+DOMAIN,a.adtng.com,REJECT
+DOMAIN,a.labadena.com,REJECT
+DOMAIN,a.magsrv.com,REJECT
+DOMAIN,a.orbsrv.com,REJECT
+DOMAIN,a.shukriya90.com,REJECT
+DOMAIN,ads.exoclick.com,REJECT
+DOMAIN,aff-partners-io.ck-cdn.com,REJECT
+DOMAIN,aff.partners.io,REJECT
+DOMAIN,creative.bbrdbr.com,REJECT
+DOMAIN,creative.myavlive.com,REJECT
+DOMAIN,creative.rmhfrtnd.com,REJECT
+DOMAIN,etahub.com,REJECT
+DOMAIN,evtubescms.phncdn.com,REJECT
+DOMAIN,ezozojawg.com,REJECT
+DOMAIN,go.aoalmfwinbsstec23.com,REJECT
+DOMAIN,go.bbrdbr.com,REJECT
+DOMAIN,go.go-srv.com,REJECT
+DOMAIN,go.myavlive.com,REJECT
+DOMAIN,go.rmhfrtnd.com,REJECT
+DOMAIN,go.spankbanglive.com,REJECT
+DOMAIN,go.xhamsterlive.com,REJECT
+DOMAIN,go.xliirdr.com,REJECT
+DOMAIN,go.xlivrdr.com,REJECT
+DOMAIN,go.xxxjmp.com,REJECT
+DOMAIN,go.xxxviijmp.com,REJECT
+DOMAIN,go.xxxvjmp.com,REJECT
+DOMAIN,hhbypdoecp.com,REJECT
+DOMAIN,ht.youporn.com,REJECT
+DOMAIN,mail.kguapp.com,REJECT
+DOMAIN,marine.xhamster.com,REJECT
+DOMAIN,partwithner.com,REJECT
+DOMAIN,pv.vipads.cc,REJECT
+DOMAIN,r.trackwilltrk.com,REJECT
+DOMAIN,reactads.engine.adglare.net,REJECT
+DOMAIN,rockpoint.xhamster.com,REJECT
+DOMAIN,s.magsrv.com,REJECT
+DOMAIN,s.orbsrv.com,REJECT
+DOMAIN,uug27.com,REJECT
+DOMAIN,www.traforama.com,REJECT
+DOMAIN,www.vipads.live,REJECT
+DOMAIN,x.eccorp.cc,REJECT
+DOMAIN-SUFFIX,adxadserv.com,REJECT
+DOMAIN-SUFFIX,chaturbate.com,REJECT
+DOMAIN-SUFFIX,clarity.ms,REJECT
+DOMAIN-SUFFIX,doppiocdn.live,REJECT
+DOMAIN-SUFFIX,faphouse.com,REJECT
+DOMAIN-SUFFIX,jads.co,REJECT
+DOMAIN-SUFFIX,juicyads.com,REJECT
+DOMAIN-SUFFIX,mnaspm.com,REJECT
+DOMAIN-SUFFIX,stripchat.com,REJECT
+DOMAIN-SUFFIX,stripchat.ooo,REJECT
+DOMAIN-SUFFIX,trafficjunky.com,REJECT
+DOMAIN-SUFFIX,trafficjunky.net,REJECT
+DOMAIN-SUFFIX,tsyndicate.com,REJECT
+DOMAIN-KEYWORD,-cdn2.adtng.com,REJECT
