@@ -3,6 +3,8 @@
 #!system = ios
 
 [URL Rewrite]
+# 掌上生活 设置栏目内广告
+^https?:\/\/intellicc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.render\.api\.render\/getDynamicDataSec - reject
 # 驾考宝典
 ^https?:\/\/\w+\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/ - reject
 # 今日头条
@@ -94,7 +96,14 @@ URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/
 ^https:\/\/mbasecc\.bcs\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 ^https:\/\/mbasecc\.bcs\.cmbchina\.com\/Edge\/api\/mlife\.mbase\.redpoint\.api\.redPointService\/getRedPointDataSec data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 ^https:\/\/az\dmbasecc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https?:\/\/intellicc\.bcs\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.adrender\.api\.AdWork\/getAdsBySlotId data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 ^https:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/infoflow\/v1\/module\/home-life data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# 中信银行
+^https?:\/\/wap.bank\.ecitic\.com:6443\/NMBFOServer\/cbframework\.do\?act=CUBEPAGEDATA data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+# 中国银行
+^https:\/\/mbs\.boc\.cn\/ubas-mgateway-static\/images\/advertType\/.+.jpg data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+# 中国银行 缤纷生活
+^https?:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do\?txnId=2PIC000001 data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
 # 有道云笔记
 ^https:\/\/dictvip-business\.youdao\.com\/home\/ad data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 ^https:\/\/dict\.youdao\.com\/course\/tab\/translateTab data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
@@ -118,4 +127,4 @@ URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/
 彩云天气 Pro=type=http-response,pattern=^http[s]?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn)\/v2\/user.*$,requires-body=1,script-path=https://raw.githubusercontent.com/WeiRen0/Scripts/main/cytq.js
 
 [MITM]
-hostname = %APPEND% mbasecc.bcs.cmbchina.com, intellicc.bcs.cmbchina.com, static-res.qq.com, userpms-api.suh.cn, patient-api.suh.cn, api.mcd.cn, ios.rqd.qq.com, mbasecc.bas.cmbchina.com, yunbusiness.ccb.com, m.juneyaoair.com, apio.zhengqi100.com, hoapp.juneyaoair.com, az*mbasecc.bas.cmbchina.com, api.petkit.cn, hfapp-service.qweather.net, api-sams.walmartmobile.cn,wallet.95516.com,*.elemecdn.com,www1.elecfans.com,home.mi.com,api.coolapk.com,home.umetrip.com,startup.umetrip.com,discardrp.umetrip.com,beacon.qq.com,4gimg.map.qq.com,dns.jd.com,api.m.jd.com,m.jd.com,*.kakamobi.cn,p*.pstatp.com,m.qianbao.qq.com,ecapi.lkcoffee.com,capi.lkcoffee.com,m.lkcoffee.com,ios.sspai.com,api.wfdata.club,dsa-mfp.fengshows.cn,*-release.wuta-cam.com,api-mifit.huami.com，com,api.cloud.189.cn,mbmodule-openapi.paas.cmbchina.com,az1mbasecc.bas.cmbchina.com,intellicc.bas.cmbchina.com,maicai.api.ddxq.mobi,webappcfg.paas.cmbchina.com,mcs-mimp-web.sf-express.com,ucmp-static.sf-express.com,ucmp.sf-express.com,voice.blued.cn,live.blued.cn,argo.blued.cn,social.blued.cn
+hostname = %APPEND% wap.bank.ecitic.com, imcs.citicbank.com, intellicc.bcs.cmbchina.com, mbs.boc.cn, mlife.jf365.boc.cn, mbasecc.bcs.cmbchina.com, intellicc.bcs.cmbchina.com, static-res.qq.com, userpms-api.suh.cn, patient-api.suh.cn, api.mcd.cn, ios.rqd.qq.com, mbasecc.bas.cmbchina.com, yunbusiness.ccb.com, m.juneyaoair.com, apio.zhengqi100.com, hoapp.juneyaoair.com, az*mbasecc.bas.cmbchina.com, api.petkit.cn, hfapp-service.qweather.net, api-sams.walmartmobile.cn,wallet.95516.com,*.elemecdn.com,www1.elecfans.com,home.mi.com,api.coolapk.com,home.umetrip.com,startup.umetrip.com,discardrp.umetrip.com,beacon.qq.com,4gimg.map.qq.com,dns.jd.com,api.m.jd.com,m.jd.com,*.kakamobi.cn,p*.pstatp.com,m.qianbao.qq.com,ecapi.lkcoffee.com,capi.lkcoffee.com,m.lkcoffee.com,ios.sspai.com,api.wfdata.club,dsa-mfp.fengshows.cn,*-release.wuta-cam.com,api-mifit.huami.com，com,api.cloud.189.cn,mbmodule-openapi.paas.cmbchina.com,az1mbasecc.bas.cmbchina.com,intellicc.bas.cmbchina.com,maicai.api.ddxq.mobi,webappcfg.paas.cmbchina.com,mcs-mimp-web.sf-express.com,ucmp-static.sf-express.com,ucmp.sf-express.com,voice.blued.cn,live.blued.cn,argo.blued.cn,social.blued.cn
