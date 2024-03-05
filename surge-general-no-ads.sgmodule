@@ -59,6 +59,8 @@ URL-REGEX,^https?:\/\/fuss10\.elemecdn\.com\/.+\/(w\/(640|750)\/h\/\d{3,4}|.+\.m
 URL-REGEX,^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welcome,REJECT
 # 航旅纵横
 URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native,REJECT
+# 动卡空间
+URL-REGEX,^https:\/\/m\.creditcard\.ecitic\.com\/citiccard\/mbk\/.+.\/appStartAdv
 
 [Map Local]
 # QQ
