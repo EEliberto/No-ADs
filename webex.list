@@ -1,3 +1,7 @@
 DOMAIN-KEYWORD,wbx2.com,DIRECT,extended-matching
 DOMAIN-KEYWORD,webex.com,DIRECT,extended-matching
-DOMAIN,external-media33.public.wnrtm-a-3.prod.infra.webex.com,DIRECT
+DOMAIN-KEYWORD,webexcontent.com,DIRECT,extended-matching
+DOMAIN,external-media33.public.wnrtm-a-3.prod.infra.webex.com,DIRECT,extended-matching
+IP-ASN,13445,DIRECT
+IP-ASN,26152,DIRECT
+IP-ASN,1399937,DIRECT
